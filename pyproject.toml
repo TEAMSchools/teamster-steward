@@ -23,7 +23,6 @@ build-backend = "pdm.pep517.api"
 
 [tool.pdm.scripts]
 _.env_file = ".env"
-k8s-namespace.shell = "kubectl create namespace dagster-cloud"
-k8s-secret-agent.shell = "kubectl create secret generic dagster-cloud-agent-token --from-literal=DAGSTER_CLOUD_AGENT_TOKEN=${DAGSTER_CLOUD_AGENT_TOKEN} --namespace dagster-cloud"
+k8s-init.shell = "bash ./.google/k8s-init.sh"
 helm-install.shell = "bash .helm/helm-install.sh"
 wi-federation-gh.shell = "bash ./.google/wi-federation-gh.sh"
