@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"python.formatting.provider": "black",
+		"python.linting.enabled": true,
+		"python.linting.flake8Enabled": true,
+		"python.analysis.completeFunctionParens": true,
+		"python.autoComplete.extraPaths": [
+			"teamster-core/__pypackages__/3.9/lib",
+			"teamster-kippnewark/__pypackages__/3.9/lib",
+			"teamster-template/__pypackages__/3.9/lib",
+		],
+		"python.analysis.extraPaths": [
+			"teamster-core/__pypackages__/3.9/lib",
+			"teamster-kippnewark/__pypackages__/3.9/lib",
+			"teamster-template/__pypackages__/3.9/lib",
+		],
+		"python.linting.flake8Args": [
+			"--max-line-length=88"
+		]
+	}
+}
