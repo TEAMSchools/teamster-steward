@@ -2,6 +2,12 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "teamster-core"
+		},
+		{
+			"path": "teamster-kippnewark"
 		}
 	],
 	"settings": {
