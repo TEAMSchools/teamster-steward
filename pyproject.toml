@@ -5,7 +5,9 @@ description = ""
 authors = [
     {name = "Charlie Bini", email = "5003326+cbini@users.noreply.github.com"},
 ]
-dependencies = []
+dependencies = [
+    "dagster-cloud>=0.14.14",
+]
 requires-python = ">=3.9"
 license = {text = "GPL-3.0-or-later"}
 
@@ -13,8 +15,8 @@ license = {text = "GPL-3.0-or-later"}
 [tool.pdm]
 [tool.pdm.dev-dependencies]
 dev = [
-    "black>=22.3.0",
     "flake8>=4.0.1",
+    "black>=22.3.0",
 ]
 
 [build-system]
@@ -27,3 +29,4 @@ k8s-init.shell = "bash ./.google/k8s-init.sh"
 helm-install.shell = "bash .helm/helm-install.sh"
 wi-federation-gh.shell = "bash ./.google/wi-federation-gh.sh"
 tf-export.shell = "gcloud beta resource-config bulk-export --path=./.google/terraform --project=${GCP_PROJECT_ID} --resource-format=terraform"
+dagster-deployment.shell = "bash ./.dagster/dagster-deployment.sh"
