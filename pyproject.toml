@@ -6,7 +6,7 @@ authors = [
     {name = "Charlie Bini", email = "5003326+cbini@users.noreply.github.com"},
 ]
 dependencies = [
-    "dagster-cloud>=0.14.14",
+    "dagster-cloud-cli>=0.15.0",
 ]
 requires-python = ">=3.9"
 license = {text = "GPL-3.0-or-later"}

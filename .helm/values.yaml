@@ -113,6 +113,15 @@ workspace:
   #     optional: true
   envSecrets: []
 
+  # Additional variables from the existing environment can be passed into any launched pods.
+  #
+  # Example:
+  #
+  # envVars:
+  #   - "FOO_ENV_VAR" (Will pull the value of FOO_ENV_VAR from the agent process)
+  #   - "BAR_ENV_VAR=baz_value" (Will set the value of BAR_ENV_VAR to baz_value)
+  envVars: []
+
   # Additional environment variables can be retrieved and set from ConfigMaps. See:
   # https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/#configure-all-key-value-pairs-in-a-configmap-as-container-environment-variables
   #

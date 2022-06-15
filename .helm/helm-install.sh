@@ -9,4 +9,4 @@ helm upgrade --install user-cloud dagster-cloud/dagster-cloud-agent \
     --namespace dagster-cloud \
     -f ./.helm/values-override.yaml
     
-pdm run dagster-deployment
+# pdm run dagster-deployment
